@@ -1,0 +1,23 @@
+---
+instances: 1
+memory: 512M
+applications:
+- name: resource
+  host: df-resource
+  path: resource/target/resource-0.0.1-SNAPSHOT.jar
+  services:
+  - config-server
+  - service-registry
+  - redis
+- name: ui
+  host: df-ui
+  path: ui/target/ui-0.0.1-SNAPSHOT.jar
+  services:
+  - config-server
+  - service-registry
+  - circuit-breaker
+  - redis
+env:
+  SPRING_PROFILES_ACTIVE: cloud
+  CF_TARGET: https://api.emea-2.fe.gopivotal.com
+#  CF_TARGET: https://api.run.pez.pivotal.io
