@@ -12,6 +12,7 @@
 
 You can run the app local too. 
 
-Hystrix dashboard on PCF is not showing data - neet to work on this
-Hystrix dashbaord shows data when app runs local
+Hystrix dashboard on PCF is not showing data right now - need to work on this
+
+Hystrix dashboard shows data when app runs local
 
